@@ -1,0 +1,23 @@
+{
+  "name": "ui5-chat-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ui5 serve -o index.html",
+    "build": "ui5 build --clean-dest --dest ./approuter/resources",
+    "build:watch": "nodemon --watch webapp --ext ts,xml,json,css --exec \"npm run build\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/openui5": "^1.130.0",
+    "@ui5/builder": "^4.0.3",
+    "@ui5/cli": "^4.0.9",
+    "typescript": "^5.6.3",
+    "ui5-middleware-livereload": "^3.1.0",
+    "ui5-middleware-serveframework": "^3.3.0",
+    "ui5-tooling-transpile": "^3.5.1"
+  }
+}
