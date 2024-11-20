@@ -104,8 +104,8 @@ export default class Chat extends Controller {
     }
 
 
-    // onNavBack(): void {
-    //     const oComponent = this.getOwnerComponent();
-    //     (oComponent as any).getRouter().navTo("chatPicker");
-    // }
+    onNavBack(): void {
+        const oComponent = this.getOwnerComponent();
+        (oComponent as any).getRouter().navTo("chatPicker");
+    }
 }

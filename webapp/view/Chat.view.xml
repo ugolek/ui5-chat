@@ -7,7 +7,6 @@
 >
     <Page
         showHeader="false"
-        title="Chat"
         enableScrolling="true"
         class="sapUiContentPadding"
         showNavButton="true"

@@ -61,7 +61,12 @@
 				"viewType": "XML",
 				"viewPath": "ui5.walkthrough.view",
 				"controlId": "app",
-				"controlAggregation": "pages"
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"notFound"
+					]
+				}
 			},
 			"routes": [
 				{
@@ -76,6 +81,9 @@
 				"chat": {
 					"viewName": "Chat",
 					"viewLevel": 1
+				},
+				"notFound": {
+					"viewName": "NotFound"
 				}
 			}
 		}

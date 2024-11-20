@@ -19,6 +19,11 @@ server:
     afterMiddleware: compression
   - name: ui5-middleware-serveframework
     afterMiddleware: compression
+  - name: ui5-middleware-simpleproxy
+    afterMiddleware: compression
+    mountPath: /V2
+    configuration:
+      baseUri: "https://baf-srv-dev.c-5c5f57a.stage.kyma.ondemand.com/"
   - name: ui5-middleware-livereload
     afterMiddleware: compression
     
